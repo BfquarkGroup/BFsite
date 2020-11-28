@@ -1,0 +1,422 @@
+.header {
+    padding: 80px;
+    text-align: center; 
+    background: #ffffff; 
+    color:  #000000; 
+ 
+  }
+  .header h1 {
+    font-size: 40px;
+  }
+  .header h2 {
+    font-size: 30px;
+    padding-top: 50px;
+  }
+  .navbar {
+    overflow: hidden; 
+    background-color: #333; 
+  }
+  .navbar .search-container {
+    float: right;
+  }
+  .navbar input[type=text] {
+    padding: 5px;
+    margin-top: 6px;
+    font-size: 16px;
+    border: none;
+  }  
+  .navbar .search-container button {
+    position: absolute;
+    right: 8px;
+    padding: 7px;
+    margin-top: 3px;
+    background-color: #333;
+    border: 2px solid #2f8533;
+    color:  #2f8533; 
+    cursor: pointer;
+  }
+
+  .navbar .search-container button:hover {
+    background-color: #7da57f;
+    color: #000;
+  }
+  .navbar a {
+    float: left;
+    display: block; 
+    color: white; 
+    text-align: center; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+  }
+ 
+  .navbar a:hover {
+    background-color: #ddd; 
+    color: black; }
+    * {
+        box-sizing: border-box;
+      }/* Column container */
+   
+    .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    .side {
+        flex: 30%; 
+        background-color: #ffffff; 
+        padding-left: 10px;
+        padding-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 20px; /* Some padding */
+        border-style: solid;
+        margin-bottom: 60%;
+        /* width */
+     
+    
+      }
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+      
+      /* Track  */
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #888; 
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555; 
+      }
+      /* Main column */
+      .main {
+        flex: 60%; /* Set the width of the main content */
+        background-color: white; /* White background color */
+        padding: 20px; /* Some padding */
+      }
+      /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {
+      flex-direction: column;
+    }
+  }
+  
+  /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+  @media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+  }
+  
+
+.select {
+
+   background-color:  #333;
+   
+  color: rgb(255, 254, 254);
+}
+      
+.select option{
+
+  color: rgb(255, 254, 254);
+ }
+ .bar{
+
+  border-top: 4px solid #333 ;
+ }
+ #des {
+
+  color:  #000000; 
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ .side p{
+ 
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center; 
+    color:  #000000; 
+
+ }
+ .main h1{
+    font-size: 20px;
+    text-align: center; 
+    color:  #000000; 
+ }
+
+ .main p{
+
+    text-align: center; 
+    color:  #000000; 
+ }
+ 
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=email] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  input[type=submit] {
+    background-color:  #333;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+  #android{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+ 
+   padding: 3px 0px;
+
+  }
+  #android img{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-right: 13px;
+    margin-top: 10px;
+  
+  }
+  #text{
+    width: 30%;
+
+  }
+  #app_name{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  
+  }
+  #app_text{
+    font-weight: bold;
+    font-family: monospace;
+    font-size: 12px;
+  }
+  #android button{
+    width: 25%;
+    
+    background-color:  #333;
+    color: #ffff;
+    height: 30px;
+    border: 0px;
+    padding: 0px 10px;
+    margin-top: 15px;
+    border-radius: 14px;
+    cursor: pointer;
+    margin-left: 20px;
+  }
+  #android button:hover {
+
+    background-color: #45a049;
+  }
+  .slideshow-container {
+    max-width: 230px;
+    position: relative;
+    margin: right;
+    box-sizing:border-box;
+    flex: 40%; 
+    padding: 20px;
+
+  }
+
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    border-style: outset
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 14px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 2px 2px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #333;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    padding-top: 20px;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  .main p{
+
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+  }
+  
+  
+  
+  .barcont{
+    border-top: 4px solid #333 ;
+    margin-top: 100px;
+
+  }
+  .all{  
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .desc{
+
+    max-width: 600px;
+    position: relative;
+ 
+    box-sizing:border-box;
+    flex: 60%; 
+   padding: 20px;
+  
+  }
+  .myDesc {
+    display: none;
+    border-style: outset
+  }
+  #dt {
+
+    color:  #000000; 
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+   }
+   .border{
+
+      border: outset;
+
+   }
+   .side {
+    flex: 30%; /* Set the width of the sidebar */
+    background-color: #ffffff; /* Grey background color */
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; /* Some padding */
+    border-style: solid;
+    margin-bottom: 60%;
+    /* width */
+ 
+
+  }
